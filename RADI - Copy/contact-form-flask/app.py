@@ -29,7 +29,7 @@ def submit():
         msg['Subject'] = subject
         msg.set_content(message)
 
-        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+        with smtplib.SMTP_SSL('saobracajtraffic.gmail.com', 465) as smtp:
             smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
             smtp.send_message(msg)
 
